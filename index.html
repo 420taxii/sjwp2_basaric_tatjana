@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="hr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zadaće</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: #1a1025;
+        font-family: Arial, sans-serif;
+      }
+
+      h1 {
+        color: #e9d5ff;
+        background: #120a1c;
+        margin: 75px 0 0;
+        padding: 10px 24px;
+        border-radius: 8px;
+      }
+
+      h3 {
+        color: #e9d5ff;
+        background: #120a1c;
+        margin: 30px 0 0;
+        padding: 6px 18px;
+        border-radius: 8px;
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        padding: 40px;
+        flex: 1;
+        align-content: center;
+      }
+
+      .card {
+        width: 180px;
+        height: 120px;
+        background: #3b1f5c;
+        border: 1px solid #7c3aed;
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #e9d5ff;
+        font-size: 1.3rem;
+        box-shadow: 0 0 12px rgba(124, 58, 237, 0.35);
+        transition:
+          transform 0.15s ease,
+          box-shadow 0.15s ease;
+      }
+
+      .card:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 0 18px rgba(124, 58, 237, 0.6);
+      }
+
+      @media (max-width: 640px) {
+        .grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>SJWP - Zadace</h1>
+    <h3>tatjana basaric</h3>
+
+    <div class="grid">
+      <div class="card">Zadaca1</div>
+      <div class="card">Zadaca2</div>
+      <div class="card">Zadaca3</div>
+      <div class="card">Zadaca4</div>
+      <div class="card">Zadaca5</div>
+      <div class="card">Zadaca6</div>
+    </div>
+  </body>
+</html>
+
+git config --global user.email "basarictatjana89@gmail.com"
