@@ -1,0 +1,60 @@
+/* LV3 - Gotove animacije
+Ime i prezime:
+Koristene biblioteke: Animate.css 4.1.1 (animate.style)
+Preuzeti isjecci: navedeni uz kod*/
+body {
+font-family: Arial, sans-serif;
+margin: 0;
+color: #222;
+}
+.naslovnica {
+padding: 60px 40px;
+background-color: #1f4e79;
+color: #fff;
+text-align: center;
+}
+  .poziv {
+display: inline-block;
+margin-top: 20px;
+padding: 12px 32px;
+color: #1f4e79;
+background-color: #fff;
+border-radius: 6px;
+text-decoration: none;
+}
+.obavijest {
+padding: 20px 40px;
+border-bottom: 3px solid #1f4e79;
+}
+
+:root {
+--animate-duration: 0.6s;
+--animate-delay: 0.4s;
+}
+.naslov {
+--animate-duration: 1.4s;
+}
+.poziv {
+animation: pulse 2s ease-in-out infinite;
+}
+
+
+
+
+
+
+.obavijest {
+animation: puls 1.5s 3;
+animation: puls 1.5s 3;
+animation-delay: 1s;
+}
+puls {
+0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(31,78,121,.7); }
+70% { transform: scale(1.03); box-shadow: 0 0 0 18px rgba(31,78,121,0); }
+100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(31,78,121,0); }
+}
+@keyframes puls {
+0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(31,78,121,.7); }
+70% { transform: scale(1.03); box-shadow: 0 0 0 18px rgba(31,78,121,0); }
+100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(31,78,121,0); }
+}
