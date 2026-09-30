@@ -1,0 +1,62 @@
+/* animacije.css - sve animacije sjedista na jednom mjestu */
+:root {
+--trajanje-brzo: 0.2s; /* hover, focus */
+--trajanje-srednje: 0.5s; /* kartice, sadrzaj */
+--trajanje-sporo: 0.8s; /* ulaz u stranicu */
+--krivulja: cubic-bezier(0.22, 0.61, 0.36, 1);
+--pomak: 24px;
+}
+
+/* 1. Navigacija */
+.izbornik__veza {
+transition: color var(--trajanje-brzo) var(--krivulja),
+border-color var(--trajanje-brzo) var(--krivulja);
+}
+.izbornik__veza:hover,
+.izbornik__veza:focus-visible {
+color: #f1c40f;
+border-color: #f1c40f;
+}
+
+/* 2. Usluzne klase za ulaz elemenata */
+@keyframes pojava {
+from { opacity: 0; }
+to { opacity: 1; }
+}
+@keyframes pojava-odozdo {
+from { opacity: 0; transform: translateY(var(--pomak)); }
+to { opacity: 1; transform: translateY(0); }
+}
+.anim-pojava,
+.anim-odozdo {
+animation-duration: var(--trajanje-sporo);
+animation-timing-function: var(--krivulja);
+animation-fill-mode: backwards;
+animation-delay: var(--odgoda, 0s);
+}
+.anim-pojava { animation-name: pojava; }
+.anim-odozdo { animation-name: pojava-odozdo; }
+
+
+
+
+
+
+
+
+
+
+
+
+.kartica {
+opacity: 0;
+animation: pojava-odozdo 0.6s ease-out forwards;
+}
+.kartica:nth-child(2) { animation-delay: 0.1s; }
+.kartica:nth-child(3) { animation-delay: 0.2s; }
+
+
+
+
+
+
