@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>skriptni jezici</title>
+    <style>
+      * {
+        background-color: #c2f8f6;
+      }
+      h1 {
+        text-emphasis: bold;
+        text-: 2.3em;
+      }
+
+      p {
+        margin: 7px;
+      }
+
+      .usporedba {
+        border-collapse: collapse;
+        text-align: center;
+      }
+      .usporedba th,
+      .usporedba td {
+        border: 1px solid #ccc;
+        padding: 6px;
+        text-align: center;
+      }
+      .mjeseci {
+        border-collapse: collapse;
+        width: 300px;
+        text-align: left;
+      }
+      .mjeseci th,
+      .mjeseci td {
+        border: 1px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="./sport.html">sport</a></li>
+        <li><a href="./vjesti.html">vjesti</a></li>
+        <li><a href="./novac.html">novac</a></li>
+      </ul>
+    </nav>
+    <h1>ponavljanje canvas i svg</h1>
+
+    <p><i>Canvas</i> je oznaka (tag) HTML5 standarda namijenjena crtanju.</p>
+    <p>
+      Canvas je 2D crtaća platforma unutar web preglednika, a koristi JavaScript
+      i HTML. Upotrebom JavaScript-a se može pristupiti čitavom setu funkcija za
+      crtanje linija, pravokutnika, lukova, crta, teksta …
+    </p>
+    <p>On nema vlastiti sadržaj, a od parametara ima samo dimenzije.</p>
+    <ul>
+      <li>
+        Canvas API (API - Application Programming Interface - aplikacijsko
+        programsko sučelje) osigurava alate za crtanje grafike putem
+        JavaScript-a i HTML &lt;canvas&gt; elementa.
+      </li>
+      <li>
+        Canvas API je uglavnom namijenjen 2D crtanju, iako postoji mogućnost
+        rada i sa 3D grafikom preko WebGL API –ja
+      </li>
+      <li>
+        Crtanje grafike s pomoću oznake &lt;canvas&gt; kombinira poznavanje
+        HTML-a, CSS-a i JavaScripta, pa ćemo njega učiti sljedećem poglavlju.
+      </li>
+    </ul>
+
+    <p>
+      <b>SVG</b>(Scalable Vector Graphics) većinom je manje težine u usporedbi
+      sa Bitmap rasterskom slikom, koja posjeduje otprilike iste rezoluciju i
+      grafički prikaz. Uključivanje SVG-a u HTML dokument omogućava naknadno
+      stiliziranje grafike putem CSS-a, ali i manipulaciju JavaScript-om. Tako
+      možemo promijeniti svojstva, kao što su: boja pozadine, teksta, okvira, na
+      isti način kao i za bilo koji HTML element. Zbog toga je omogućeno i
+      animirati sve SVG objekte preko JavaScript biblioteke kao što je jQuery.
+    </p>
+    <h3>usporedba svg-a i canvasa</h3>
+    <table class="usporedba">
+      <tr>
+        <th>category</th>
+        <th>canvas</th>
+        <th>SVG</th>
+      </tr>
+      <tr>
+        <td>supporting elements</td>
+        <td>bitmap,based on pixels</td>
+        <td>vector illustration,based on graphic elements</td>
+      </tr>
+      <tr>
+        <td>operation object</td>
+        <td>single html element</td>
+        <td>various graphic elements</td>
+      </tr>
+      <tr>
+        <td>driver</td>
+        <td>javascript and other script driven</td>
+        <td>script or css driven</td>
+      </tr>
+    </table>
+    <br />
+    <table class="mjeseci">
+      <tr>
+        <th>mjesec</th>
+        <th>usteda</th>
+        <th>usteda za blagdane</th>
+      </tr>
+      <tr>
+        <td>sijecanj</td>
+        <td>100€</td>
+        <th rowspan="2">50€</th>
+      </tr>
+      <tr>
+        <td>veljaca</td>
+        <td>80€</td>
+      </tr>
+    </table>
+    <br />
+    <img
+      src="Snimka zaslona 2026-10-15 114847.png"
+      alt="slika 2"
+      width:480px
+      height:220px
+    />
+    <h2>primjer svg-a i canvasa</h2>
+    <svg width="300" height="300" viewBox="0 0 300 250">
+      <rect width="300" height="250" fill="lightblue" />
+      <rect y="170" width="300" height="80" fill="dodgerblue" />
+      <circle cx="60" cy="50" r="25" fill="yellow" />
+
+      <polygon points="145,100 75,170 145,170" fill="white" />
+      <polygon points="155,105 155,170 210,170" fill="red" />
+
+      <rect x="145" y="50" width="9" height="130" fill="black" />
+      <polygon points="153,50 180,63 153,76" fill="red" />
+
+      <path d="M75 180 L210 180 Q200 230 140 230 Q85 220 75 180" fill="blue" />
+
+      <circle cx="110" cy="200" r="8" fill="white" />
+      <circle cx="145" cy="200" r="8" fill="white" />
+      <circle cx="180" cy="200" r="8" fill="white" />
+    </svg>
+  </body>
+</html>
