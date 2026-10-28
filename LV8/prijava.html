@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prijava na izlet</title>
+  <link rel="stylesheet" href="css/stil.css">
+</head>
+<body>
+
+  <header class="zaglavlje">
+    <h1>Prijava na stru&ccaron;ni izlet</h1>
+    <p>Tehni&ccaron;ka &scaron;kola Slavonski Brod</p>
+  </header>
+
+  <main class="omotac">
+
+    <form class="obrazac" action="primljeno.html" method="get">
+
+      <p class="polje">
+        <label for="ime">Ime i prezime</label>
+        <input type="text" id="ime" name="ime">
+      </p>
+
+      <p class="polje">
+        <label for="eposta">E-po&scaron;ta</label>
+        <input type="text" id="eposta" name="eposta">
+      </p>
+
+      <p class="polje">
+        <label for="datum">Datum ro&dstrok;enja</label>
+        <input type="text" id="datum" name="datum">
+      </p>
+
+      <p class="polje">
+        <label for="sudionici">Broj sudionika</label>
+        <input type="text" id="sudionici" name="sudionici">
+      </p>
+
+      <fieldset class="skupina">
+        <legend>Veli&ccaron;ina majice</legend>
+        <p class="izbor">
+          <input type="radio" id="majica-s" name="majica-s" value="S">
+          <label for="majica-s">S</label>
+        </p>
+        <p class="izbor">
+          <input type="radio" id="majica-m" name="majica-m" value="M">
+          <label for="majica-m">M</label>
+        </p>
+        <p class="izbor">
+          <input type="radio" id="majica-l" name="majica-l" value="L">
+          <label for="majica-l">L</label>
+        </p>
+      </fieldset>
+
+      <p class="polje">
+        <label for="razred">Razred</label>
+        <input type="text" id="razred" name="razred" value="4.E" disabled>
+      </p>
+
+      <p class="polje">
+        <button type="submit">Po&scaron;alji prijavu</button>
+      </p>
+
+    </form>
+
+  </main>
+
+</body>
+</html>
