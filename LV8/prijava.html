@@ -19,22 +19,22 @@
 
       <p class="polje">
         <label for="ime">Ime i prezime</label>
-        <input type="text" id="ime" name="ime">
+        <input type="text" id="ime" name="ime" placeholder="Ana Horvat" required maxlength="40">
       </p>
 
       <p class="polje">
         <label for="eposta">E-po&scaron;ta</label>
-        <input type="text" id="eposta" name="eposta">
+        <input type="email" id="eposta" name="eposta" placeholder="ana.horvat@example.com" required>
       </p>
 
       <p class="polje">
         <label for="datum">Datum ro&dstrok;enja</label>
-        <input type="text" id="datum" name="datum">
+        <input type="date" id="datum" name="datum">
       </p>
 
       <p class="polje">
         <label for="sudionici">Broj sudionika</label>
-        <input type="text" id="sudionici" name="sudionici">
+        <input type="number" id="sudionici" name="sudionici" min="1" max="5" step="1" value="1">
       </p>
 
       <fieldset class="skupina">
@@ -55,7 +55,7 @@
 
       <p class="polje">
         <label for="razred">Razred</label>
-        <input type="text" id="razred" name="razred" value="4.E" disabled>
+        <input type="text" id="razred" name="razred" value="4.E" readonly>
       </p>
 
       <p class="polje">
