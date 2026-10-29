@@ -1,12 +1,38 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <div class="kartica" style="width: 100px; height: 100px; background-color: lightblue;"></div>
-    <button id="toggle">promjeni boju</button>
-</body>
+<!doctype html>
+<html lang="hr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Kartica</title>
+
+    <style>
+      .kartica {
+        padding: 20px;
+        border: 1px solid gray;
+        width: 250px;
+        margin-bottom: 10px;
+      }
+
+      .istaknuto {
+        background-color: lightblue;
+        color: purple;
+        font-weight: bold;
+        border: 2px solid violet;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="kartica" id="mojaKartica">
+      <h3>kartica</h3>
+      <p>sadrzaj kartice</p>
+    </div>
+
+    <button onclick="promijeniIzgled()">Promijeni izgled</button>
+
+    <script>
+      function promijeniIzgled() {
+        let kartica = document.querySelector(".kartica");
+        kartica.classList.toggle("istaknuto");
+      }
+    </script>
+  </body>
 </html>

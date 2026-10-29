@@ -1,20 +1,23 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <p>lorem</p>
-    <button>hide</button>
+<!doctype html>
+<html lang="hr">
+  <body>
+    <p id="odlomak">odlomak</p>
+
+    <button onclick="sakrijPrikazi()">Sakrij odlomak</button>
 
     <script>
-        let button=document.querySelector("button");
-        let paragraf=document.querySelector("p");
-        button.addEventListener("click", function(paragraf) {
-            p.style.display="none";
-        });
+      function sakrijPrikazi() {
+        let odlomak = document.getElementById("odlomak");
+        let gumb = document.querySelector("button");
 
-</body>
+        if (odlomak.style.display !== "none") {
+          odlomak.style.display = "none";
+          gumb.textContent = "prikazi";
+        } else {
+          odlomak.style.display = "block";
+          gumb.textContent = "sakrij";
+        }
+      }
+    </script>
+  </body>
 </html>

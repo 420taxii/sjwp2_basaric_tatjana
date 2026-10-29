@@ -1,42 +1,42 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <h1>moja stranica</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        Odio vitae quae unde id error adipisci pariatur a provident cum rem harum,
-        assumenda,
-        consectetur qui quisquam, totam sed et magni ipsam!</p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio vitae quae
+      unde id error adipisci pariatur a provident cum rem harum, assumenda,
+      consectetur qui quisquam, totam sed et magni ipsam!
+    </p>
 
-
-        <button id="myButton">prikazi msg</button>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Animi fuga iusto tenetur doloribus ullam,
-            officiis dolor atque?</p>
+    <button id="myButton">prikazi msg</button>
+    <p id="par">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi fuga iusto
+      tenetur doloribus ullam, officiis dolor atque?
+    </p>
 
     <script>
-        let naslov=document.querySelector("h1");
-        naslov.innerHTML="dom radi"
+      let naslov = document.querySelector("h1");
+      naslov.innerHTML = "dom radi";
 
-        let paragraf=document.querySelector("p");
-        paragraf.textContent="ovo je paragraf"
+      let paragraf = document.querySelector("p");
+      paragraf.textContent = "ovo je paragraf";
 
-        naslov.style.color="blue";
-        naslov.style.fontSize="32px";
+      naslov.style.color = "blue";
+      naslov.style.fontSize = "32px";
 
-        paragraf.style.backgroundColor="lightblue";
-        paragraf.style.padding="10px";
-        paragraf.style.textAlign="center";
+      paragraf.style.backgroundColor = "lightblue";
+      paragraf.style.padding = "10px";
+      paragraf.style.textAlign = "center";
 
-let button=document.getElementById("myButton");
-button.addEventListener("click", function() {
-    alert("uspjesno ste kliknuli gumb");
-});
+      let button = document.getElementById("myButton");
+      button.addEventListener("click", function () {
+        document.getElementById("par").textContent = "uspjesno ste kliknuli";
+      });
     </script>
-
-</body>
+  </body>
 </html>

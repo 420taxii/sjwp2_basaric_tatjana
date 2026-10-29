@@ -1,29 +1,23 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    
+  </head>
+  <body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
 
-    <p class="p">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
 
-    <p class="pa">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
 
-    <p class="par">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <script>
+      let odlomci = document.querySelectorAll("p");
 
-<script>
-
-    let p=document.querySelector(".p");
-    let pa=document.querySelector(".pa");
-    let par=document.querySelector(".par");
-     querySelectorAll("p").forEach(function() {
-        document.getElementById("p").style.backgroundColor="lightblue";
-      document.getElementById("pa").style.backgroundColor="violet";
-      document.getElementById("par").style.backgroundColor="lightgreen";
-    }); 
-</script>
-</body>
+      odlomci[0].style.color = "red";
+      odlomci[1].style.color = "blue";
+      odlomci[2].style.color = "yellow";
+    </script>
+  </body>
 </html>
