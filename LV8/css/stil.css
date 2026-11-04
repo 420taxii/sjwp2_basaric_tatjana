@@ -85,3 +85,16 @@ body {
 .izbor input { width: auto; margin-right: 0.4rem; }
 
 .izbor label { display: inline; font-weight: normal; color: inherit; }
+
+.polje input:focus-visible,
+.izbor input:focus-visible {
+outline: 3px solid #f1c40f;
+outline-offset: 2px;
+}
+.izbor input {
+accent-color: #1f4e79;
+}
+
+.polje input:invalid {
+border-color: #c0392b;
+}
