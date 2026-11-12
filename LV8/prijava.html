@@ -38,30 +38,61 @@
       </p>
 
       <fieldset class="skupina">
-        <legend>Veli&ccaron;ina majice</legend>
+        <legend>Velicina majice</legend>
         <p class="izbor">
           <input type="radio" id="majica-s" name="majica-s" value="S">
           <label for="majica-s">S</label>
         </p>
         <p class="izbor">
-          <input type="radio" id="majica-m" name="majica-m" value="M">
+          <input type="radio" id="majica-m" name="majica-m" value="M" checked>
           <label for="majica-m">M</label>
         </p>
         <p class="izbor">
           <input type="radio" id="majica-l" name="majica-l" value="L">
           <label for="majica-l">L</label>
         </p>
-      </fieldset>
+
+       
 
       <p class="polje">
         <label for="razred">Razred</label>
         <input type="text" id="razred" name="razred" value="4.E" readonly>
       </p>
 
+      <p class="izbor">
+      <input type="checkbox" id="vege"name="vege">
+      <label for="vege">vegeterijanski obrok</label>
+      </p>
+      <p class="izbor">
+        <input type="checkbox" id="prijevoz" name="prijevoz" value="autobus">
+        <label for="prijevoz">trebam prijevoz</label>
+      </p>
+
+
+       <legend>nacin placanja</legend>
+        
+        <p class="izbor">
+          <input type="radio" id="pay" name="kartica" value="card">
+          <label for="kartica">card</label>
+        </p>
+        <p class="izbor">
+          <input type="radio" id="pay" name="kesh" value="cash">
+          <label for="kesh">cash</label>
+        </p>
+        <p class="izbor">
+          <input type="radio" id="pay" name="appl" value="cash">
+          <label for="appl">apple pay</label>
+        </p>
+<br>
+       <p class="izbor">
+      <input type="checkbox" id="prist"name="acc">
+      <label for="acc">procitao/la sam terms n conditions i slazem se</label>
+      </p>
+<br>
+      
       <p class="polje">
         <button type="submit">Po&scaron;alji prijavu</button>
       </p>
-
     </form>
 
   </main>
