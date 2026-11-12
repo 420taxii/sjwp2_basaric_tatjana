@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="hr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>reakcija</title>
+
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        margin-top: 100px;
+      }
+
+      input {
+        padding: 10px;
+        font-size: 18px;
+      }
+
+      p {
+        font-size: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>reakcija</h1>
+
+    <input type="text" id="unos" placeholder="napisi" />
+
+    <p id="poruka"></p>
+    <p id="tipka"></p>
+
+    <script>
+      const unos = document.getElementById("unos");
+      const poruka = document.getElementById("poruka");
+      const tipka = document.getElementById("tipka");
+
+      document.addEventListener("keydown", function (event) {
+        if (document.activeElement !== unos) {
+          return;
+        }
+
+        tipka.textContent = "pritisnuta tipka: " + event.key;
+
+        if (event.key === "Enter") {
+          poruka.textContent = "potvrdeno";
+        }
+
+        if (event.key === "Escape") {
+          unos.value = "";
+          poruka.textContent = "";
+        }
+      });
+    </script>
+  </body>
+</html>
