@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+        <form action="primljeno.html" method="get">
+
+             <p class="polje">
+        <label for="ime">Ime i prezime</label>
+        <input type="text" id="ime" name="ime" required maxlength="40">
+      </p>
+        
+
+
+       <p class="polje">
+       <label for="majice">majica</label>
+       <select id="majice" name="majice" size="4" required>
+          <option>small</option>
+          <option value="m">medium</option>
+          <option value="l">large</option>
+          <option value="xl">xlarge</option>
+        </select>
+      </p>
+
+       <label for="boja">Odaberite boju:</label>
+  <select name="boja" id="boja">
+    <optgroup label="Svijetle boje">
+      <option value="bijela">Bijela</option>
+      <option value="zuta">Žuta</option>
+      <option value="roza">Roza</option>
+    </optgroup>
+
+    <optgroup label="Tamne boje">
+      <option value="crna">Crna</option>
+      <option value="plava">Plava</option>
+      <option value="zelena">Zelena</option>
+    </optgroup>
+  </select>
+
+  <br><br>
+
+   <label for="tisak">Dodatni tisak:</label>
+  <select name="tisak" id="tisak" multiple>
+    <option value="logo">Logo</option>
+    <option value="tekst">Tekst</option>
+    <option value="slika">Slika</option>
+    <option value="natpis">Natpis</option>
+  </select>
+
+  <br><br>
+
+  <button type="submit">Pošalji</button>
+     
+
+
+
+</form>
+</body>
+</html>

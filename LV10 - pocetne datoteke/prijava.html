@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prijava na izlet</title>
+  <link rel="stylesheet" href="css/stil.css">
+</head>
+<body>
+
+  <header class="zaglavlje">
+    <h1>Prijava na stru&ccaron;ni izlet</h1>
+    <p>Tehni&ccaron;ka &scaron;kola Slavonski Brod</p>
+  </header>
+
+  <main class="omotac">
+
+    <form class="obrazac" action="primljeno.html" method="get">
+
+      <p class="polje">
+        <label for="ime">Ime i prezime</label>
+        <input type="text" id="ime" name="ime" required maxlength="40">
+      </p>
+
+      <p class="polje">
+        <label for="odrediste">Odredi&scaron;te izleta</label>
+        <select id="odrediste" name="odrediste" required>
+          <option value=" " disabled selected>-- odaberi odredi&scaron;te --</option>
+          <optgroup label="kontinental">
+          <option value="zg">Zagreb(tehnički muzej)</option>
+          <option value="os">Osijek</option>
+          </optgroup>
+          <optgroup label="primorje">
+               <option value="ri" selected>Rijeka</option>
+          </optgroup>
+        </select>
+      </p>
+
+      <p class="polje">
+       <label for="prijevoz">Prijevoz (moguce vise odgovora)</label>
+       <select id="prijevoz" name="prijevoz" multiple size="4">
+          <option value="bus">Autobus</option>
+          <option value="vlak">Vlak</option>
+          <option value="auto">Osobni automobil</option>
+          <option value="bicikl">Bicikl</option>
+        </select>
+      </p>
+
+      <p class="polje">
+        <button type="submit">Po&scaron;alji prijavu</button>
+      </p>
+
+    </form>
+
+  </main>
+
+</body>
+</html>
