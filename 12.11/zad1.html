@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="hr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Brojač</title>
+
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        margin-top: 100px;
+      }
+
+      #broj {
+        font-size: 40px;
+        margin: 20px;
+      }
+
+      button {
+        padding: 10px 25px;
+        font-size: 20px;
+        margin: 5px;
+        cursor: pointer;
+      }
+
+      #poruka {
+        color: red;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Brojac</h1>
+
+    <div id="broj">0</div>
+
+    <button id="plus">+</button>
+    <button id="minus">-</button>
+    <button id="reset">Reset</button>
+
+    <p id="poruka"></p>
+
+    <script>
+      let broj = 0;
+
+      const prikaz = document.getElementById("broj");
+      const plus = document.getElementById("plus");
+      const minus = document.getElementById("minus");
+      const reset = document.getElementById("reset");
+      const poruka = document.getElementById("poruka");
+
+      function azuriraj() {
+        prikaz.textContent = broj;
+
+        if (broj < 0) {
+          poruka.textContent = "negativan";
+        } else {
+          poruka.textContent = "";
+        }
+      }
+
+      plus.addEventListener("click", function () {
+        broj++;
+        azuriraj();
+      });
+
+      minus.addEventListener("click", function () {
+        broj--;
+        azuriraj();
+      });
+
+      reset.addEventListener("click", function () {
+        broj = 0;
+        azuriraj();
+      });
+    </script>
+  </body>
+</html>
