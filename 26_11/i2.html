@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="hr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>letter counter</title>
+
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        margin-top: 100px;
+      }
+
+      input {
+        padding: 10px;
+        font-size: 18px;
+      }
+
+      p {
+        font-size: 20px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>letter counter</h1>
+
+    <input type="text" id="unos" placeholder="Napiši nešto..." />
+
+    <p id="poruka">broj slova: 0</p>
+
+    <script>
+      const unos = document.getElementById("unos");
+      const poruka = document.getElementById("poruka");
+
+      unos.addEventListener("input", function () {
+        const tekst = unos.value;
+
+        const brojSlova = [...tekst].filter((slovo) =>
+          /\p{L}/u.test(slovo),
+        ).length;
+
+        poruka.textContent = "Broj slova: " + brojSlova;
+      });
+    </script>
+  </body>
+</html>
